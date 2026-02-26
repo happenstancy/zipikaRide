@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Italy Vespa Rider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hud">
+      <h1>Zipika 10km/day</h1>
+      <div class="stats">
+        <span>Distance: <strong id="score">0</strong> m</span>
+        <span>Best: <strong id="best">0</strong> m</span>
+      </div>
+    </header>
+
+    <canvas id="game" width="420" height="760" aria-label="Italy Rider game"></canvas>
+
+    <div class="touch-controls" aria-hidden="true">
+      <button id="leftBtn">◀ Lane</button>
+      <button id="rightBtn">Lane ▶</button>
+    </div>
+
+    <div id="note" class="note"></div>
+
+    <div id="overlay" class="overlay">
+      <h2>Arpan lai ni italy ma vespa chadaula pls</h2>
+      <p>Use <strong>←</strong> and <strong>→</strong> or tap/swipe on the road.</p>
+      <p>Sometimes Lane switching only, no turning back on me.</p>
+      <button id="startBtn">Start Ride</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
